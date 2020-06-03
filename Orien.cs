@@ -23,8 +23,8 @@ public class Orien : MonoBehaviour
     {
         return new Quaternion(
             input.z,
+            -input.x,
             -input.y,
-            input.x,
             input.w
         );
     }
