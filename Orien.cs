@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Orien : MonoBehaviour
 {
-
     private Quaternion orien = Quaternion.identity;
     private Quaternion ref_q = Quaternion.identity;
+
     public void SetRef()
     {
         ref_q = orien;
@@ -22,8 +22,8 @@ public class Orien : MonoBehaviour
     private Quaternion ConvertToUnity(Quaternion input)
     {
         return new Quaternion(
+            input.z,
             -input.y,
-            -input.z,
             input.x,
             input.w
         );

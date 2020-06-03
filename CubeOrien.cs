@@ -6,10 +6,10 @@ public class CubeOrien : MonoBehaviour
 {
 
     // Use this for initialization
-    private Orien orien;
+    public Orien orien;
     void Start()
     {
-        orien = gameObject.GetComponent<Orien>();
+     
     }
 
     // Update is called once per frame
