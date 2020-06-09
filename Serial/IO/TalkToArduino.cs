@@ -56,9 +56,9 @@ public class TalkToArduino : MonoBehaviour
         if (!Double.TryParse(q_str[8], out z2)) return;
 
        
-        orien_upper.SetGloablOrien(new Quaternion((float)x1, (float)y1, (float)z1, (float)w1));
+        orien_lower.SetGloablOrien(new Quaternion((float)x1, (float)y1, (float)z1, (float)w1));
 
-        orien_lower.SetGloablOrien(new Quaternion((float)x2, (float)y2, (float)z2, (float)w2));
+        orien_upper.SetGloablOrien(new Quaternion((float)x2, (float)y2, (float)z2, (float)w2));
 
 
 
