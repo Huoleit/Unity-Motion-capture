@@ -7,7 +7,8 @@ public class CameraSwitch : MonoBehaviour {
     // Use this for initialization
     public GameObject front;
     public GameObject back;
-	void Start () {
+    public GameObject view;
+    void Start () {
 		
 	}
 	
@@ -17,11 +18,19 @@ public class CameraSwitch : MonoBehaviour {
         {
             front.SetActive(true);
             back.SetActive(false);
+            view.SetActive(false);
         }
         else if(Input.GetKeyUp(KeyCode.Alpha2))
         {
             front.SetActive(false);
             back.SetActive(true);
+            view.SetActive(false);
+        }
+        else if(Input.GetKeyUp(KeyCode.Alpha3))
+        {
+            front.SetActive(false);
+            back.SetActive(false);
+            view.SetActive(true);
         }
 	}
 }
