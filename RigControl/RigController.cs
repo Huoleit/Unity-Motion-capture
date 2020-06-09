@@ -46,7 +46,7 @@ public class RigController : MonoBehaviour {
         //Quaternion q = Quaternion.Euler(x, y, z);
         //rightLowerArm.SetLocalRotation(q);
 
-        rightLowerArm.SetLocalRotation(orien_lower.GetOrien());
+        rightLowerArm.SetLocalRotation(Quaternion.Inverse(orien_upper.GetOrien())*orien_lower.GetOrien());
         rightUpperArm.SetLocalRotation(orien_upper.GetOrien());
 
     }
