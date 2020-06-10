@@ -1,0 +1,3 @@
+[submodule "IMU-band"]
+	path = IMU-band
+	url = git@github.com:Huoleit/IMU-band.git
